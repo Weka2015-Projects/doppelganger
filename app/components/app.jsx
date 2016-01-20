@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Nav from './nav.jsx!'
 
 class App extends Component {
   constructor() {
@@ -6,7 +7,7 @@ class App extends Component {
   }
 
   render () {
-    return (<p>'Hello World' </p>)
+    return (<Nav />)
   }
 }
 
