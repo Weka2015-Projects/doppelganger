@@ -1,12 +1,13 @@
-import React from 'react'
+import React, { Component } from 'react'
+import Signup from './signup.jsx!'
 
-class App extends React.Component {
+class App extends Component {
   constructor() {
     super()
   }
 
   render () {
-    return (<p>'Hello World' </p>)
+    return (<Signup/>)
   }
 }
 
