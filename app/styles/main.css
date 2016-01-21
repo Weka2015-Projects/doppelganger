@@ -1,0 +1,116 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+
+body {
+  font-family: 'Oswald', sans-serif;
+}
+
+.signup-box {
+  height: 350px;
+  width: 50%;
+  display: block;
+  margin: auto;
+}
+
+.signup-box .form-box {
+  display: block;
+  margin: 200px auto 0 auto ;
+  width: 80%;
+  border: 4px solid #000;
+  border-radius: 25px;
+  box-shadow: 4px 4px 2px #888888;
+}
+
+.signup-box .form-box form {
+  padding: 50px;
+}
+
+.signup-box .form-box h1 {
+  position: inline-block;
+  margin: 50px auto -50px auto;
+  text-align: center;
+}
+
+.signup-box .form-box form .input-group {
+  margin: 8px;
+}
+
+.signup-box .form-box form .input-group label {
+  width: 20%;
+  display: inline-block;
+  text-align: right;
+  padding-right: 6px;
+}
+
+.signup-box .form-box form .input-group input {
+  width: 70%;
+}
+
+.signup-box .form-box form .buttons {
+  display: block;
+  margin: auto;
+  padding: 10px;
+  text-transform: uppercase;
+  height:
+}
+
+.signup-box .form-box form .buttons #login {
+  width: 20%;
+  margin: 15px auto 0 auto;
+  display: block;
+  padding: 11px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  font-family: 'Oswald', sans-serif;
+  background: #85f86d;
+  background: linear-gradient(#85f86d, #aefa9e);
+  border: none;
+  font-size: 1.2rem;
+  box-shadow: 4px 4px 2px #888888;
+}
+
+.signup-box .modal {
+  position: absolute;
+  background-color: rgba(0, 0, 0, .7)
+  z-index: 100;
+}
+
+.profile {
+  height: 100px;
+  width: 100px;
+  border: 2px solid #ff751a;
+}
+
+.profile-div {
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+}
+
+.profile-container {
+   width: 280px;
+  height: 200px;
+  border: 1px solid white;
+}
+.profile-title {
+  font-family: fantasy;
+  font-size: 20px;
+}
+
+.nav {
+  height: 1000px;
+  width: 280px;
+  background-color: #99bbff;
+  position: fixed;
+  top: -5px;
+  left: -5px;
+}
+
+.post-title {
+}
+
+.content {
+  width: 1000px;
+  margin-left: 300px;
+}
+
+/*# sourceMappingURL=main.css.map */
