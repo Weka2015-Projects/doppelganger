@@ -6,7 +6,7 @@ class Profile extends Component {
   }
 
   render () {
-    return (<div><h3>Yugi Moto</h3> <img className = "profile" src="http://vignette3.wikia.nocookie.net/ygotas/images/0/0b/Yugi.gif/revision/latest?cb=20130813100731"/></div> )
+    return (<div className = "profile-div"><h3 className = "profile-title">Yugi Moto</h3> <img className = "profile" src="http://vignette3.wikia.nocookie.net/ygotas/images/0/0b/Yugi.gif/revision/latest?cb=20130813100731"/></div> )
   }
 }
 

@@ -8,7 +8,7 @@ class Nav extends Component {
   }
 
   render () {
-    return (<Profile />)
+    return (<div className = "nav"><div className='profile-container'><Profile /></div></div>)
   }
 }
 
