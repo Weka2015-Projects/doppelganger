@@ -1,7 +1,6 @@
 module.exports = function(grunt) {
 
   // Add the grunt-mocha-test tasks.
-  grunt.loadNpmTasks('grunt-mocha-test');
   grunt.loadNpmTasks('grunt-contrib-sass');
 
   grunt.initConfig({
@@ -19,6 +18,6 @@ module.exports = function(grunt) {
     }
   });
 
-  grunt.registerTask('default', ['mochaTest', 'sass']);
+  grunt.registerTask('default', ['sass']);
 
 };
