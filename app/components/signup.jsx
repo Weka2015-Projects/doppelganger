@@ -15,8 +15,6 @@ class Signup extends Component {
     e.preventDefault()
     var emailInput = ReactDOM.findDOMNode(this.refs.email).value
     var passwordInput = ReactDOM.findDOMNode(this.refs.password).value
-    console.log(emailInput)
-    console.log(passwordInput)
     data.authWithPassword({
       email: emailInput,
       password: passwordInput

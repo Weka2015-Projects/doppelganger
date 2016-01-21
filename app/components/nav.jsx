@@ -3,12 +3,13 @@ import Profile from './profile.jsx!'
 
 
 class Nav extends Component {
-  constructor() {
-    super()
+  constructor(props) {
+    super(props)
   }
 
+
   render () {
-    return (<div className = "nav"><div className='profile-container'><Profile /></div></div>)
+    return (<div className = "nav"><div className='profile-container'><Profile user={this.props.user}/></div></div>)
   }
 }
 
