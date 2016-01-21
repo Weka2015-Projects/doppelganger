@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import Signup from './signup.jsx!'
+import Nav from './nav.jsx!'
+import Content from './content.jsx!'
 
 
 class App extends Component {
@@ -18,6 +20,7 @@ class App extends Component {
   }
 
   render () {
+
     const {user} = this.state
     let content
     if (user) {

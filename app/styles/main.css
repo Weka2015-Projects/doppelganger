@@ -11,8 +11,6 @@ body {
   margin: auto;
 }
 
-
-
 .signup-box .form-box {
   display: block;
   margin: 200px auto 0 auto ;
@@ -74,6 +72,45 @@ body {
   position: absolute;
   background-color: rgba(0, 0, 0, .7)
   z-index: 100;
+}
+
+.profile {
+  height: 100px;
+  width: 100px;
+  border: 2px solid #ff751a;
+}
+
+.profile-div {
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+}
+
+.profile-container {
+   width: 280px;
+  height: 200px;
+  border: 1px solid white;
+}
+.profile-title {
+  font-family: fantasy;
+  font-size: 20px;
+}
+
+.nav {
+  height: 1000px;
+  width: 280px;
+  background-color: #99bbff;
+  position: fixed;
+  top: -5px;
+  left: -5px;
+}
+
+.post-title {
+}
+
+.content {
+  width: 1000px;
+  margin-left: 300px;
 }
 
 /*# sourceMappingURL=main.css.map */
