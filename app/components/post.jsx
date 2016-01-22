@@ -12,14 +12,21 @@ class Post extends Component {
   handleEvent (e) {
     e.preventDefault()
     const newPost = this._input.value
-    this.data.child('post').push(newPost)
+    const newTitle = this._dope.value
+    this.data.child('post').push({
+      title: newTitle,
+      content: newPost,
+      createdAt: new Date().getTime()
+    })
     this._input.value = ''
+    this._dope.value = ''
   }
 
   render () {
     return (
       <form onSubmit={this.handleEvent.bind(this)} className = "post-div">
-        <textarea ref={(c) => this._input = c} className="post-title" placeholder="Enter your message">
+        <input type="text" ref={(c) => this._dope = c} className="post-title"></input>
+        <textarea ref={(c) => this._input = c} className="post-content" placeholder="Enter your message">
         </textarea>
         <input type="submit" value="Submit"/>
       </form>

@@ -10,9 +10,16 @@ class Content extends Component {
   }
 
   render () {
-    return (<div className = "content"><div className='post-container'><Post user={this.props.user}/></div>
-      <div className = 'feed-container'><Feed /></div></div>)
-  }
+    return (
+      <div className = "content">
+        <div className='post-container'>
+          <Post user={this.props.user}/>
+        </div>
+        <div className = 'feed-container'>
+          <Feed user={this.props.user} />
+        </div>
+     </div>
+  )}
 }
 
 export default Content
