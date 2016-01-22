@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Firebase from 'firebase'
 import FeedItem from './feed-item.jsx!'
+import R from 'ramda'
 
 class Feed extends Component {
   constructor(props) {
@@ -22,17 +23,32 @@ class Feed extends Component {
         })
     })
   }
+  orderPosts(posts) {
 
+    const mostRecent = R.sort((a, b) => {
+      return b.createdAt - a.createdAt
+    }, posts)
+    return mostRecent
+  }
 
   render () {
     const { posts } = this.state
     const feedArray = []
-    for (let i in posts) {
 
-      feedArray.push(<FeedItem key = {i} title = {posts[i].title} content = {posts[i].content} />)
-      console.log(posts[i])
+    for(let i in posts){
+      feedArray.push({
+        title: posts[i].title,
+        content: posts[i].content,
+        createdAt: posts[i].createdAt
+      })
     }
-    return (<div className = "feed-div"><h3 className = "feed-title"></h3>{feedArray}</div> )
+    const sortedArray = this.orderPosts(feedArray)
+    const displayArray = []
+    console.log(sortedArray)
+    for(let i in sortedArray){
+        displayArray.push(    <FeedItem key ={i} title = {sortedArray[i].title} content = {sortedArray[i].content} />)
+      }
+    return (<div className = "feed-div"><h3 className = "feed-title"></h3>{displayArray}</div> )
   }
 }
 

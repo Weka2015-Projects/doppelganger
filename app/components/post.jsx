@@ -25,7 +25,7 @@ class Post extends Component {
   render () {
     return (
       <form onSubmit={this.handleEvent.bind(this)} className = "post-div">
-        <input type="text" ref={(c) => this._dope = c} className="post-title"></input>
+        <input type="text" ref={(c) => this._dope = c} className="post-title" placeholder="Enter your Title"></input>
         <textarea ref={(c) => this._input = c} className="post-content" placeholder="Enter your message">
         </textarea>
         <input type="submit" value="Submit"/>

@@ -29,7 +29,13 @@ class Profile extends Component {
     const { age, bio, occupation, username, avatar } = this.state
 
 
-    return (<div className = "profile-div"><h3 className="profile-title" >{username}</h3> <img className="profile" src={avatar}/></div> )
+    return (
+      <div className = "profile-div">
+        <h3 className="profile-title" >{username}</h3>
+        <div className="image-wrapper">
+          <img className="profile" src={avatar}/>
+        </div>
+      </div> )
   }
 }
 
