@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Signup from './signup.jsx!'
 import Nav from './nav.jsx!'
 import Content from './content.jsx!'
-
+import Firebase from 'firebase'
 
 class App extends Component {
   constructor() {
@@ -11,12 +11,18 @@ class App extends Component {
       user: undefined
     }
   }
+  componentWillMount() {
+    const data = new Firebase('https://doppleganger.firebaseio.com/users/')
+    const user = data.getAuth()
+    if(user) {
+      this.setUser(user)
+    }
+  }
 
   setUser(authData) {
     this.setState({
       user: authData.uid
     })
-    console.log(authData.uid)
   }
 
   render () {
@@ -24,8 +30,8 @@ class App extends Component {
     const {user} = this.state
     let content
     if (user) {
-      content = [<Nav user={user}/>,
-      <Content user={user}/>]
+      content = [<Nav key='1' user={user}/>,
+    <Content key='2' user={user}/>]
     } else {
       content = <Signup setUser={this.setUser.bind(this)} />
     }

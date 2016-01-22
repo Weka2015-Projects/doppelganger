@@ -19,6 +19,7 @@ System.config({
     "core-js": "npm:core-js@1.2.6",
     "firebase": "npm:firebase@2.3.2",
     "jsx": "npm:jspm-loader-jsx@0.0.7",
+    "ramda": "npm:ramda@0.19.1",
     "react": "npm:react@0.14.6",
     "react-dom": "npm:react-dom@0.14.6",
     "react-router": "npm:react-router@2.0.0-rc5",
@@ -359,6 +360,9 @@ System.config({
     },
     "npm:query-string@3.0.0": {
       "strict-uri-encode": "npm:strict-uri-encode@1.1.0"
+    },
+    "npm:ramda@0.19.1": {
+      "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:randombytes@2.0.2": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
